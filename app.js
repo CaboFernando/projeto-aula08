@@ -19,4 +19,6 @@ app.use('/', indexRouter);
 app.use('/login', loginRouter);
 app.use('/posts', postsRouter);
 
-app.listen(3000);
+const porta = process.env.PORT || 3000;
+
+app.listen(porta);
